@@ -1,0 +1,72 @@
+<!-- 声明html5文件 -->
+<!DOCTYPE html>
+<html>
+	<!-- 头部元素 -->
+	<head>
+		<!-- 页面编码 -->
+		<meta charset="utf-8" />
+		<!-- 页面标题 -->
+		<title>云鸟</title>
+		<!-- 引入样式表 -->
+		<link type="text/css" href="css/base/common.css" rel="stylesheet" />
+		<link type="text/css" href="css/base/index.css" rel="stylesheet" />
+		<link type="text/css" href="css/base/animation.css" rel="stylesheet" />
+		<!-- 引入脚本 -->
+		<script type="module" src="js/index.js"></script>
+		<script type="text/javascript" src="js/styleIndex.js" defer></script>
+		<script type="text/javascript" src="js/imgError.js" defer></script>
+	</head>
+	<body>
+		<!-- 背景 -->
+		<iframe id="background" src="../Background/index.html"></iframe>
+
+		<!-- 搜索栏 -->
+		<div id="pSearch">
+			<!-- 搜索框 -->
+			<div id="bSearch" class="OutsideBg">
+				<form id="formSearch" class="WithinBg" method="get" action="https://www.baidu.com/s" target="_blank">
+					<input id="inputSearch" name="wd" autocomplete="off" />
+					<button id="engine" type="button">
+						<img src="https://www.baidu.com/favicon.ico" />
+					</button>
+					<button id="enter" type="submit">
+						<img src="img/search.png" />
+					</button>
+				</form>
+			</div>
+			<!-- 引擎列表 -->
+			<div id="bEngines" class="OutsideBg TopOpen" tabindex="-1">
+				<div id="engines" class="WithinBg IconTable1">
+					<!-- <div>
+						<img src="https://www.baidu.com/favicon.ico" />
+						<span>见鬼啦大家</span>
+					</div> -->
+				</div>
+			</div>
+		</div>
+
+		<!-- 导航栏 -->
+		<div id="pNav">
+			<div id="bNav" class="OutsideBg">
+				<div id="up" class="WithinBg">
+					<img src="img/more.png"/>
+				</div>
+				<div id="divNav">
+					<!-- <nav id="nav" class="WithinBg IconTable1">
+						<a href="https://www.bilibili.com/" target="_blank">
+							<div>
+								<img src="https://pc-index-static.cdn.bcebos.com/pc-index-nav/00001/导航List_bilibili.png" />
+								<span>哔哩哔哩</span>
+							</div>
+						</a>
+					</nav> -->
+				</div>
+			</div>
+		</div>
+		
+		<!-- 功能页 -->
+		<div id="pMore" class="OutsideBg BottomOpen">
+			<iframe id="more" class="OutsideBg" src="more.html"></iframe>
+		</div>
+	</body>
+</html>

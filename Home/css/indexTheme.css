@@ -1,0 +1,17 @@
+/* 边框颜色 */
+.TBorderColor{
+	border-color: rgba(0, 0, 0, 0.5);
+}
+/* 背景颜色和内容颜色 */
+.TContentBg{
+	background-color: rgba(0, 0, 0, 0.7);
+	color: antiquewhite;
+}
+/* 导航项颜色 */
+.TNav{
+	background-color: rgba(0,0,0,0.3);
+}
+/* 导航项悬停颜色 */
+.TNav:hover{
+	background-color:rebeccapurple;
+}

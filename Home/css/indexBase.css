@@ -1,0 +1,135 @@
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+iframe {
+	width: 100%;
+	height: 100%;
+	border: none;
+}
+
+#search {
+	width: 36rem;
+	max-width: 80%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	--search--size: 3rem;
+}
+
+#searchForm {
+	position: relative;
+}
+
+#searchForm button {
+	width: var(--search--size);
+	height: var(--search--size);
+	padding: 0.5rem;
+	border: none;
+	background-color: rgba(0, 0, 0, 0);
+	position: absolute;
+	transition: all 200ms;
+}
+
+#searchForm button:hover {
+	padding: 0.3rem;
+}
+
+#searchForm button:first-of-type {
+	left: 0%;
+}
+
+#searchForm button:last-of-type {
+	right: 0%;
+}
+
+#searchForm img {
+	width: 100%;
+	height: 100%;
+}
+
+#searchInput {
+	width: 100%;
+	height: var(--search--size);
+	padding: 0% var(--search--size);
+	line-height: var(--search--size);
+	border: none;
+	box-sizing: border-box;
+	border-radius: 0.5rem;
+	outline: none;
+	font-size: 130%;
+}
+
+/* 搜索引擎列表 */
+#engines {
+	max-height: 9rem;
+	min-height: 4.5rem;
+	padding-bottom: 0.5rem;
+	border-radius: 0.5rem;
+	display: flex;
+	flex-wrap: wrap;
+	overflow: auto;
+}
+
+#bottom {
+	max-width: 6.25rem;
+	position: fixed;
+	bottom: 8%;
+	left: 50%;
+	transform: translateX(-50%);
+	transition: all 1s;
+}
+
+#bottom:hover {
+	max-width: 60%;
+}
+
+#nav {
+	padding: 0 0.5rem 0.5rem 0;
+	border-radius: 0.5rem;
+	display: flex;
+	overflow: auto;
+	scroll-behavior: smooth;
+}
+
+#user{
+	position: absolute;
+	top: 0%;
+	left: 0%;
+	z-index: 999;
+}
+
+/* 隐藏滚动条 */
+.noScrollbar::-webkit-scrollbar {
+	display: none;
+}
+
+/* 背景边框样式 */
+.backgroundBorder {
+	border-style: solid;
+	border-width: 0.5rem;
+	border-radius: 1rem;
+}
+
+.message {
+	position: absolute;
+	width: 5rem;
+	height: 2rem;
+	line-height: 2rem;
+	left: 0%;
+	top: -50%;
+	border-radius: 1rem;
+	box-shadow: 0.1rem 0.1rem 1rem black;
+	overflow: hidden;
+	/* 不换行 */
+	white-space: nowrap;
+	/* 超出文本隐藏 */
+	text-overflow: ellipsis;
+}

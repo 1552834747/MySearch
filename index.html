@@ -1,0 +1,63 @@
+<!-- 声明html5文件 -->
+<!DOCTYPE html>
+<html>
+	<!-- 头部元素 -->
+	<head>
+		<!-- 页面编码 -->
+		<meta charset="utf-8" />
+		<!-- 页面标题 -->
+		<title>云鸟</title>
+		<link type="text/css" href="Home/css/indexBase.css" rel="stylesheet" />
+		<link type="text/css" href="Home/css/indexTheme.css" rel="stylesheet" />
+		<link type="text/css" href="Home/css/navBase.css" rel="stylesheet" />
+		<link type="text/css" href="Home/css/animation.css" rel="stylesheet" />
+		<script type="module" src="Home/js/index.js"></script>
+		<script type="text/javascript" src="Home/js/styleIndex.js" defer></script>
+		<script type="text/javascript" src="Home/js/imgError.js" defer></script>
+	</head>
+	<body>
+		<!-- 背景 -->
+		<iframe id="background" src="Background/index.html"></iframe>
+
+		<!-- 搜索栏 -->
+		<div id="search">
+			<!-- 搜素框 -->
+			<div class="backgroundBorder TBorderColor">
+				<form id="searchForm" method="get" action="https://www.baidu.com/s" target="_blank">
+					<input id="searchInput" class="TBorderColor TContentBg" name="wd" autocomplete="off" />
+					<button id="engine" type="button">
+						<img src="https://www.baidu.com/favicon.ico" />
+						<div id="engineAlt" class="BottomOpen message TContentBg" hidden>
+							百度
+						</div>
+					</button>
+					<button type="submit">
+						<img src="img/search.png" />
+					</button>
+				</form>
+			</div>
+			<!-- 搜索引擎列表 -->
+			<div id="searchEngins" class="TopOpen0 backgroundBorder TBorderColor" tabindex="-1">
+				<div id="engines" class="noScrollbar navTable TContentBg">
+					<!-- <div class="TNav">
+						<img src="https://www.baidu.com/favicon.ico" />
+						<span>见鬼啦大家</span>
+					</div> -->
+				</div>
+			</div>
+		</div>
+		
+		<!-- 导航栏 -->
+		<div id="bottom" class="backgroundBorder TBorderColor">
+			<nav id="nav" class="noScrollbar navTable TContentBg">
+				<div id="more" class="TNav">
+					<img src="img/more.png" />
+					<span>菜单栏</span>
+				</div>
+			</nav>
+		</div>
+		
+		<!-- 用户界面 -->
+		<iframe id="user" class="TContentBg BottomOpen0" src="more.html" loading="lazy" hidden></iframe>
+	</body>
+</html>

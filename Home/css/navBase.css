@@ -1,0 +1,34 @@
+.navTable a{
+	color: inherit;
+	text-decoration: none;
+}
+.navTable div{
+	width: 5.25rem;
+	min-width: 5.25rem;
+	height: 4rem;
+	margin: 0.5rem 0 0 0.5rem;
+	text-align: center;
+	font-size: x-small;
+	border-radius: 0.2rem;
+	transition: all 200ms;
+}
+.navTable div:hover{
+	transform: scale(1.1);
+	border-radius: 0.5rem;
+}
+.navTable img{
+	margin-top: 0.5rem;
+	width: 2rem;
+	height: 2rem;
+}
+.navTable span{
+	display: block;
+	overflow: hidden;
+	padding: 0 0.5rem;
+	/* 不可选中 */
+	user-select: none;
+	/* 超出文本隐藏 */
+	text-overflow: ellipsis;
+	/* 不换行 */
+	white-space: nowrap;
+}

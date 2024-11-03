@@ -1,0 +1,58 @@
+/* 外层背景 */
+.OutsideBg{
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius:1rem;
+	padding: 0.5rem;
+}
+/* 内层背景 */
+.WithinBg{
+	background-color: rgba(0, 0, 0, 0.5);
+	border-radius:0.7rem;
+}
+.IconTable1{
+	box-sizing: border-box;
+	padding: 0 0.5rem 0.5rem 0;
+}
+.IconTable1 a{
+	text-decoration: none;
+}
+/* 图标项 */
+.IconTable1 div{
+	display: block;
+	text-align: center;
+	background-color: #666;
+	border-radius: 0.2rem;
+	width: 4.5rem;
+	height: 3.75rem;
+	padding: 0.25rem 0.25rem 0;
+	box-sizing: border-box;
+	margin: 0.5rem 0 0 0.5rem;
+	font-size: x-small;
+	color: aliceblue;
+}
+.IconTable1 div:hover {
+	transition: all 300ms;
+	transform: scale(1.15);
+	background-color: #999;
+	border-radius: 0.5rem;
+}
+/* 去掉滚动条 */
+.IconTable1::-webkit-scrollbar {
+	display: none;
+}
+/* 图标 */
+.IconTable1 img {
+	width: 2rem;
+	height: 2rem;
+}
+/* 图标标题 */
+.IconTable1 span {
+	display: block;
+	/* 不可选中 */
+	user-select: none;
+	overflow: hidden;
+	/* 超出文本隐藏 */
+	text-overflow: ellipsis;
+	/* 不换行 */
+	white-space: nowrap;
+}
